@@ -1,7 +1,7 @@
 <ion-view view-title="Dashboard" ng-controller="BlueController">
   <ion-content class="padding">
-  	<br><br><br><br>
-
+  	<br><br>
+    <br><br>
   	<button class="button button-block button-outline" ng-click="blueScan()">
   		Scan
 	</button>
@@ -9,9 +9,13 @@
      <button class="button button-block button-calm" ng-click="blueConnect()">
   		Connect
 	</button>
+  <br><br>
+  <button class="button button-block button-calm" ng-click="isScheduled()">
+      Scheduled?
+  </button>
 	<br><br>
 	 <button class="button button-block button-assertive" ng-click="blueDisconnect()">
-  		Is connected....?
+  	Disconnect
 	</button>
   </ion-content>
 </ion-view>

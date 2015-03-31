@@ -7,7 +7,7 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ngCordova'])
 
-.run(function($ionicPlatform, $cordovaBLE, $cordovaLocalNotification) {
+.run(function($ionicPlatform, $cordovaBLE, $cordovaLocalNotification, $cordovaVibration, $rootScope) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -18,7 +18,25 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
+    $cordovaBLE.scan([],5);
+
+    /*setTimeout(function () {
+      var alarmTime = new Date();
+        alarmTime.setSeconds(alarmTime.getSeconds()+20);
+        $cordovaLocalNotification.add({
+            id: "1234",
+            date: alarmTime,
+            message: "ALERT: LIGHTERJACKING IN PROGRESS!!!",
+            title: "LighterJack",
+            autoCancel: true,
+            sound: null
+        }).then(function () {
+            console.log("The notification has been set");
+        });
+    },5000);*/
+
   });
+    
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
