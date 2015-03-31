@@ -1,1 +1,44 @@
-/* Empty. Add your own CSS if you like */
+@font-face {
+  font-family: Gotham;
+  src: url("Gotham-Black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: typewriter;
+  src: url("typewriter.otf") format("opentype");
+}
+
+@font-face {
+  font-family: TypewriterStd;
+  src: url("TypewriterStd.otf") format("opentype");
+}
+
+@font-face {
+  font-family:OCRBStd;
+  src: url("OCRBStd.otf") format("opentype");
+}
+
+@font-face {
+  font-family:OCRAStd;
+  src: url("OCRAStd.otf") format("opentype");
+}
+
+body {
+	font-family: 'OCRAStd';
+  text-align: center;
+}
+
+button, h2 {
+  font-family: 'OCRAStd';
+  text-align: center;
+}
+div.title.title-center.header-item {
+  font-family: 'OCRAStd';
+  font-size: 27px;
+  color: white;
+}
+
+.item {
+  border:none;
+}
+

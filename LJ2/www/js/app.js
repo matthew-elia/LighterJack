@@ -18,9 +18,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
+
+    /*
     $cordovaBLE.scan([],5);
 
-    /*setTimeout(function () {
+    setTimeout(function () {
       var alarmTime = new Date();
         alarmTime.setSeconds(alarmTime.getSeconds()+20);
         $cordovaLocalNotification.add({
@@ -71,7 +73,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     views: {
       'tab-account': {
         templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
+        controller: 'AccountController'
       }
     }
   });
